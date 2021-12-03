@@ -64,7 +64,7 @@ public class Voiture extends GestionVehicules.Vehicule
         if(getMarque().equals("Renault") || getMarque().equals("Fiat"))
             difference += 10;
         else if(getMarque().equals("Ferrari") || getMarque().equals("Porsche"))
-            difference += 20;
+            difference -= 20;
         this.setPrixCourant(this.getPrixAchat() - (this.getPrixAchat() * difference/100));
         if (this.getPrixCourant() <= 0 )
         {
